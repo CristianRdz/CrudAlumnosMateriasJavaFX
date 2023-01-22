@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.utez.edu.crudexamen.MenuControlador">
+   <children>
+      <Button fx:id="btnIr" layoutX="136.0" layoutY="243.0" mnemonicParsing="false" onAction="#irAlumnos" text="Ir" />
+      <Label layoutX="125.0" layoutY="200.0" text="Alumnos" />
+      <Label layoutX="419.0" layoutY="200.0" text="Materias" />
+      <Button fx:id="btnIrMaterias" layoutX="430.0" layoutY="243.0" mnemonicParsing="false"  onAction="#irMaterias" text="Ir" />
+      <ImageView fx:id="imgAlumnos" fitHeight="150.0" fitWidth="200.0" layoutX="59.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgMaterias" fitHeight="150.0" fitWidth="200.0" layoutX="353.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>

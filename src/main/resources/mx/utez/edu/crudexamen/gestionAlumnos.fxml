@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.utez.edu.crudexamen.GestionAlumnos">
+   <children>
+      <ScrollPane layoutX="43.0" layoutY="155.0" prefHeight="202.0" prefWidth="515.0">
+         <content>
+            <TableView fx:id="tablaAlumnos" prefHeight="200.0" prefWidth="513.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="28.0" text="ID" />
+                <TableColumn fx:id="colNombre" prefWidth="125.0" text="Nombre" />
+                <TableColumn fx:id="colApellidos" prefWidth="107.0" text="Apellidos" />
+                <TableColumn fx:id="colEdad" prefWidth="101.0" text="Edad" />
+                <TableColumn fx:id="colMaterias" prefWidth="151.0" text="Materias" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="txtId" layoutX="44.0" layoutY="118.0" prefHeight="25.0" prefWidth="73.0" />
+      <Button layoutX="132.0" layoutY="118.0" mnemonicParsing="false" onAction="#eliminarAlumno" text="Eliminar" />
+      <Button layoutX="198.0" layoutY="118.0" mnemonicParsing="false" onAction="#modificarAlumno" text="Modificar" />
+      <Button layoutX="498.0" layoutY="118.0" mnemonicParsing="false" onAction="#agregarAlumno" text="Agregar" />
+      <Label layoutX="44.0" layoutY="101.0" text="ID" />
+      <TextField fx:id="txtBuscar" layoutX="44.0" layoutY="47.0" onKeyTyped="#buscarAlumno" prefHeight="25.0" prefWidth="454.0" />
+      <Button layoutX="502.0" layoutY="47.0" mnemonicParsing="false" text="Buscar" onAction="#buscarAlumno" />
+      <Button layoutX="18.0" layoutY="14.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+      <Button layoutX="271.0" layoutY="118.0" mnemonicParsing="false" text="Asignar Materias" onAction="#asignarMaterias" />
+   </children>
+</Pane>

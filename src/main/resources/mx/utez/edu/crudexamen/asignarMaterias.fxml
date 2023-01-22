@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.utez.edu.crudexamen.AsignarMateria">
+   <ScrollPane layoutX="42.0" layoutY="140.0">
+      <content>
+           <TableView fx:id="tablaMaterias" prefHeight="200.0" prefWidth="200.0">
+               <columns>
+                   <TableColumn fx:id="colClave" prefWidth="44.0" text="Clave" />
+                   <TableColumn fx:id="colNombre" prefWidth="155.0" text="Nombre" />
+               </columns>
+           </TableView>
+      </content>
+   </ScrollPane>
+    <Button layoutX="18.0" layoutY="14.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+   <ScrollPane layoutX="355.0" layoutY="140.0">
+      <content>
+           <TableView fx:id="tablaMateriasAlumno" prefHeight="200.0" prefWidth="200.0">
+               <columns>
+                   <TableColumn fx:id="colClaveAlumno" prefWidth="44.0" text="Clave" />
+                   <TableColumn fx:id="colNombreAlumno" prefWidth="155.0" text="Nombre" />
+               </columns>
+           </TableView>
+      </content>
+   </ScrollPane>
+    <Button layoutX="189.0" layoutY="49.0" mnemonicParsing="false" text="Buscar" onAction="#buscarMateria" />
+    <TextField fx:id="txtBuscar" layoutX="38.0" layoutY="49.0" onKeyTyped="#buscarMateria" />
+    <Button layoutX="187.0" layoutY="86.0" mnemonicParsing="false" onAction="#asignarMateria" text="Asignar" />
+    <Button layoutX="482.0" layoutY="86.0" mnemonicParsing="false" onAction="#desAsignarMateria" text="Desasignar" />
+    <Label layoutX="88.0" layoutY="348.0" text="Materias Disponibles" />
+    <Label layoutX="405.0" layoutY="348.0" text="Materias Asignadas" />
+    <TextField fx:id="txtId" layoutX="355.0" layoutY="49.0" prefHeight="25.0" prefWidth="138.0" />
+    <Button layoutX="504.0" layoutY="49.0" mnemonicParsing="false" onAction="#cargarAlumno" text="Cargar" />
+    <Label layoutX="355.0" layoutY="31.0" text="ID alumno" />
+    <TextField fx:id="txtClaveAsignar" layoutX="38.0" layoutY="86.0" prefHeight="25.0" prefWidth="138.0" />
+    <TextField fx:id="txtClaveDesasignar" layoutX="353.0" layoutY="86.0" prefHeight="25.0" prefWidth="126.0" />
+</Pane>

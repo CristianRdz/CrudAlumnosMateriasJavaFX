@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.utez.edu.crudexamen.GestionMaterias">
+   <children>
+      <ScrollPane layoutX="43.0" layoutY="155.0" prefHeight="202.0" prefWidth="515.0">
+         <content>
+            <TableView fx:id="tablaMaterias" prefHeight="200.0" prefWidth="513.0">
+               <columns>
+                  <TableColumn fx:id="colClave" prefWidth="255.0" text="Clave" />
+                  <TableColumn fx:id="colNombre" prefWidth="257.0" text="Nombre" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="txtId" layoutX="44.0" layoutY="118.0" prefHeight="25.0" prefWidth="73.0" />
+      <Button layoutX="132.0" layoutY="118.0" mnemonicParsing="false" onAction="#eliminarMateria" text="Eliminar" />
+      <Button layoutX="198.0" layoutY="118.0" mnemonicParsing="false" onAction="#modificarMateria" text="Modificar" />
+      <Button layoutX="498.0" layoutY="118.0" mnemonicParsing="false" onAction="#agregarMateria" text="Agregar" />
+      <Label layoutX="44.0" layoutY="101.0" text="Clave" />
+      <TextField fx:id="txtBuscar" layoutX="44.0" layoutY="47.0" onKeyTyped="#buscarMateria" prefHeight="25.0" prefWidth="454.0" />
+      <Button layoutX="502.0" layoutY="47.0" mnemonicParsing="false"  text="Buscar" onAction="#buscarMateria" />
+      <Button layoutX="18.0" layoutY="14.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+   </children>
+</Pane>
